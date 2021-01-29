@@ -19,8 +19,36 @@ Für die Nutzung von Kartenmaterial ohne Inernetzugang werden die Kacheln in ein
 ## Container
 Für dieses Tutorial verwenden wir die Offline Container von basemap.at:
 
-[basemap.at Standard Auflösung, Zoom 0..16 (19 GB!)](https://www.basemap.at/downloads/offline/bmap_standard_mbtiles_L00bisL16.zip)
-[basemap.at Orthofoto, Zoom 0..16 (9 GB!)](https://www.basemap.at/downloads/offline/bmap_orthofoto_mbtiles_L00bisL16.zip)
+* [basemap.at Standard Auflösung, Zoom 0..16 (19 GB!)](https://www.basemap.at/downloads/offline/bmap_standard_mbtiles_L00bisL16.zip)
+und/oder
+* [basemap.at Orthofoto, Zoom 0..16 (9 GB!)](https://www.basemap.at/downloads/offline/bmap_orthofoto_mbtiles_L00bisL16.zip)
+ 
+ 
+## Offline Bereitstellung
+Wie schon im Punkt Kartenmaterial beschrieben, wird das Kartenmaterial typischerweise über einen Server bereitgestellt und die Kartenkacheln über eine URL geladen. Das werden wir auch in diesem Totorial so machen. Wir stellen einen minimalen Karten-Server zur Verfügung, der vom [US Conservation Biology Institute
+](https://github.com/consbio/mbtileserver) als frei verwendbare Open-Source Software bereitgestellt wird.
+
+Dazu benötigen wir [den MBTiles Server]() und entpacken das Archiv (ZIP) an einen beliebigen Ort im Dateisystem. Das Resultat sieht so aus:
+
+```
+├── mbtileserver-osx
+├── mbtileserver-windows.exe
+├── tilesets
+     ├── Readme.txt
+```
+
+Nun laden wir einen (oder beide) der oben angeführten Container von basemap.at und entpacken die darin enthaltene(n) ```mbtiles``` Dateien in den Ordner ```tilesets```. Wir haben das hier mit dem "Standard" Tile Container gemacht. Möglicherweise kann der verwendete Name von unserem in diesem Beispiel abweichen, jedoch sollte darauf geachtet werden, dass der Dateiname __keine__ Leer- oder Sonderzeichen enthält:
+
+```
+├── mbtileserver-osx
+├── mbtileserver-windows.exe
+├── tilesets
+     ├── Readme.txt
+     ├── standard16.mbtiles
+
+```
+
+
  
  
 # Nutzung in ODIN
