@@ -84,6 +84,8 @@ Ok, wir müssen also noch weiter navigieren und öffnen die angegebene URL ```ht
 ```
  
 Die für uns wichtige Information versteckt sich hinter der Eigenschaft ```tiles```. Die URL ```http://localhost:8000/services/standard16/tiles/{z}/{x}/{y}.png``` entspricht dem oben erklärten z/x/y Schema und wird jetzt in ODIN verwendet.
+
+Um bei vielen ```mbtiles``` Containern sicherzustellen, dass wir auch den richtigen erwischt haben, lässt sich über die in der Eigenschaft ```map``` angegebenen URL ```http://localhost:8000/services/standard16/map``` eine lokale Vorschau im Browser starten:
  
 # Nutzung in ODIN
 ODIN verwendet für den Zugriff auf die 
