@@ -54,7 +54,7 @@ Nun laden wir einen (oder beide) der oben angeführten Container von basemap.at 
 ## Starten des Servers
 Wir stellen in diesem Tutorial ausführbare Dateien für _MacOS-X_ und _Windows_ zur Verfügung. Bitte je nach Betriebssystem entweder ```osx.command``` oder ```windows.cmd``` im Finder/Datei Explorer doppelklicken. Dadurch wird der _Tile Server_ gestartet und es öffnet sich ein Fenster:
 
-
+![./offline-mbtiles-osx.png]
  
  
 # Nutzung in ODIN
