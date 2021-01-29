@@ -17,7 +17,7 @@ Das Kartenmaterial wird in der Form von quadratischen Kacheln (Tiles) bereitgest
 Für die Nutzung von Kartenmaterial ohne Inernetzugang werden die Kacheln in einen Container gepackt. Das ermöglicht die Verteilung und Nutzung durch die Bereitstellung einer einzigen - zugegeben sehr großen - Datei.
  
 ## Container
-Für dieses Tutorial verwenden wir die Offline Container von basemap.at:
+Für dieses Tutorial verwenden wir die Offline Container von basemap.at. Die maximale Zoomstufe 16 entspricht etwa einem Maßstab von 1:8000 (siehe [OpenStreetMap Zoom Levels](https://wiki.openstreetmap.org/wiki/Zoom_levels)
 
 * [basemap.at Standard Auflösung, Zoom 0..16 (19 GB!)](https://www.basemap.at/downloads/offline/bmap_standard_mbtiles_L00bisL16.zip)
 und/oder
@@ -52,6 +52,8 @@ Nun laden wir einen (oder beide) der oben angeführten Container von basemap.at 
 ```
 
 ## Starten des Servers
+Wir stellen in diesem Tutorial ausführbare Dateien für _MacOS-X_ und _Windows_ zur Verfügung. Bitte je nach Betriebssystem entweder ```osx.command``` oder ```windows.cmd``` im Finder/Datei Explorer doppelklicken. Dadurch wird der _Tile Server_ gestartet und es öffnet sich ein Fenster:
+
 
  
  
