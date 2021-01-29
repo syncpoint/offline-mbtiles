@@ -54,8 +54,36 @@ Nun laden wir einen (oder beide) der oben angeführten Container von basemap.at 
 ## Starten des Servers
 Wir stellen in diesem Tutorial ausführbare Dateien für _MacOS-X_ und _Windows_ zur Verfügung. Bitte je nach Betriebssystem entweder ```osx.command``` oder ```windows.cmd``` im Finder/Datei Explorer doppelklicken. Dadurch wird der _Tile Server_ gestartet und es öffnet sich ein Fenster:
 
-![./offline-mbtiles-osx.png]
+![OSX mbtileserver](offline-mbtiles-osx.png)
+
+Ser lokale Tile Server ist nun bereit und stellt (in diesem Fall) ein _Tileset_ (also ein spezifisches Kartenmaterial) unter der url ```http://localhost:8000/services``` zur Verfügung. Um herauszufinden, wie genau wir an das Kartenmaterial herankommen, öffnen wir diese URL in einem beliebigen Browser. Der Server gibt nun Aukunft darüber, welches Kartenmaterial abgerufen werden kann:
+
+```json
+[{"imageType":"png","url":"http://localhost:8000/services/standard16","name":"GDE-basemap_Standard1"}]
+```
+
+Ok, wir müssen also noch weiter navigieren und öffnen die angegebene URL ```http://localhost:8000/services/standard16``` (nun lässt sich auch erkennen, warum der oben verwendete Dateiname keine Leer- oder Sonderzeichen enthalten soll: dieser Name wird als URL bereitgestellt):
  
+```json
+{
+  "bounds":[9.3,46.1,17.9,49.5],
+  "description":"Created with  www.GPSDatenErfassung.at",
+  "format":"png",
+  "map":"http://localhost:8000/services/standard16/map",
+  "maxZoom":"16",
+  "maxzoom":16,
+  "minZoom":"8",
+  "minzoom":8,
+  "name":"GDE-basemap_Standard1",
+  "scheme":"xyz",
+  "tilejson":"2.1.0",
+  "tiles":["http://localhost:8000/services/standard16/tiles/{z}/{x}/{y}.png"],
+  "type":"baselayer",
+  "version":"1.1"
+ }
+```
+ 
+Die für uns wichtige Information versteckt sich hinter der Eigenschaft ```tiles```. Die URL ```http://localhost:8000/services/standard16/tiles/{z}/{x}/{y}.png``` entspricht dem oben erklärten z/x/y Schema und wird jetzt in ODIN verwendet.
  
 # Nutzung in ODIN
 ODIN verwendet für den Zugriff auf die 
