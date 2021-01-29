@@ -25,27 +25,30 @@ und/oder
  
  
 ## Offline Bereitstellung
-Wie schon im Punkt Kartenmaterial beschrieben, wird das Kartenmaterial typischerweise über einen Server bereitgestellt und die Kartenkacheln über eine URL geladen. Das werden wir auch in diesem Totorial so machen. Wir stellen einen minimalen Karten-Server zur Verfügung, der vom [US Conservation Biology Institute
+Wie schon im Punkt Kartenmaterial beschrieben, wird das Kartenmaterial typischerweise über einen Server bereitgestellt und die Kartenkacheln über eine URL geladen. Das werden wir auch in diesem Tutorial so machen. Wir stellen einen minimalen Karten-Server zur Verfügung, der vom [US Conservation Biology Institute
 ](https://github.com/consbio/mbtileserver) als frei verwendbare Open-Source Software bereitgestellt wird.
 
 Dazu benötigen wir [den MBTiles Server]() und entpacken das Archiv (ZIP) an einen beliebigen Ort im Dateisystem. Das Resultat sieht so aus:
 
 ```
-├── mbtileserver-osx
-├── mbtileserver-windows.exe
+├── mbtileserver
+├── mbtileserver.exe
+├── osx.command
 ├── tilesets
      ├── Readme.txt
+├── windows.cmd
 ```
 
-Nun laden wir einen (oder beide) der oben angeführten Container von basemap.at und entpacken die darin enthaltene(n) ```mbtiles``` Dateien in den Ordner ```tilesets```. Wir haben das hier mit dem "Standard" Tile Container gemacht. Möglicherweise kann der verwendete Name von unserem in diesem Beispiel abweichen, jedoch sollte darauf geachtet werden, dass der Dateiname __keine__ Leer- oder Sonderzeichen enthält:
+Nun laden wir einen (oder beide) der oben angeführten Container von basemap.at und entpacken die darin enthaltene(n) ```.mbtiles``` Dateien in den Ordner ```tilesets```. Wir haben das hier mit dem "Standard" Tile Container gemacht. Möglicherweise kann der Name des Containers von dem in diesem Beispiel abweichen, jedoch sollte darauf geachtet werden, dass der Dateiname __keine__ Leer- oder Sonderzeichen enthält:
 
 ```
-├── mbtileserver-osx
-├── mbtileserver-windows.exe
+├── mbtileserver
+├── mbtileserver.exe
+├── osx.command
 ├── tilesets
      ├── Readme.txt
      ├── standard16.mbtiles
-
+├── windows.cmd
 ```
 
 
