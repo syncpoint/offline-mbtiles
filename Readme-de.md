@@ -28,7 +28,7 @@ und/oder
 Wie schon im Punkt Kartenmaterial beschrieben, wird das Kartenmaterial typischerweise über einen Server bereitgestellt und die Kartenkacheln über eine URL geladen. Das werden wir auch in diesem Tutorial so machen. Wir stellen einen minimalen Karten-Server zur Verfügung, der vom [US Conservation Biology Institute
 ](https://github.com/consbio/mbtileserver) als frei verwendbare Open-Source Software bereitgestellt wird.
 
-Dazu benötigen wir [den MBTiles Server]() und entpacken das Archiv (ZIP) an einen beliebigen Ort im Dateisystem. Das Resultat sieht so aus:
+Dazu benötigen wir [den ODIN Offline Maps MBTiles Server](https://github.com/syncpoint/offline-mbtiles/releases/download/v1.0/ODIN_Offline_Maps.zip) und entpacken das Archiv (ZIP) an einen beliebigen Ort im Dateisystem. Das Resultat sieht so aus:
 
 ```
 ├── mbtileserver
