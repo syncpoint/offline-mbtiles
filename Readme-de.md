@@ -56,7 +56,7 @@ Wir stellen in diesem Tutorial ausführbare Dateien für _MacOS-X_ und _Windows_
 
 ![OSX mbtileserver](offline-mbtiles-osx.png)
 
-Ser lokale Tile Server ist nun bereit und stellt (in diesem Fall) ein _Tileset_ (also ein spezifisches Kartenmaterial) unter der url ```http://localhost:8000/services``` zur Verfügung. Um herauszufinden, wie genau wir an das Kartenmaterial herankommen, öffnen wir diese URL in einem beliebigen Browser. Der Server gibt nun Aukunft darüber, welches Kartenmaterial abgerufen werden kann:
+Ser lokale Tile Server ist nun bereit und stellt (in diesem Fall) ein _Tileset_ (also ein spezifisches Kartenmaterial) unter der URL ```http://localhost:8000/services``` zur Verfügung. Um herauszufinden, wie genau wir an das Kartenmaterial herankommen, öffnen wir diese URL in einem beliebigen Browser. Der Server gibt nun Aukunft darüber, welches Kartenmaterial abgerufen werden kann:
 
 ```json
 [{"imageType":"png","url":"http://localhost:8000/services/standard16","name":"GDE-basemap_Standard1"}]
@@ -87,10 +87,15 @@ Die für uns wichtige Information versteckt sich hinter der Eigenschaft ```tiles
 
 Um bei vielen ```mbtiles``` Containern sicherzustellen, dass wir auch den richtigen erwischt haben, lässt sich über die in der Eigenschaft ```map``` angegebenen URL ```http://localhost:8000/services/standard16/map``` eine lokale Vorschau im Browser starten.
  
-# Nutzung in ODIN
+# Nutzung in ODIN (oder anderer Software)
 Die oben ermittelte URL für den lokalen Tile Provider ```http://localhost:8000/services/standard16/tiles/{z}/{x}/{y}.png``` werden wir nun in ODIN verwenden. Dazu öffnen wir die Verwaltung der Basiskarten und fügen mit Hilfe des Assistenten einen neuen Eintrag hinzu. Die verwendete URL bzw. die Werte für ```minZoom``` (8) und ```maxZoom``` (16) stammen aus den ermittelten Daten der basemap.at:
 
 ![ODIN Basiskarte URL](ODIN-Basiskarte-URL.png)
 ![ODIN Basiskarte Zoom](ODIN-Basiskarte-MinMax-Zoom.png)
 ![ODIN Basiskarte Vorschau](ODIN-Basiskarte-Vorschau.png)
 ![ODIN Basiskarte Namen](ODIN-Basiskarte-Namen.png)
+
+Geschafft! So lange der lokale Tile Server läuft, können wir nun mit ODIN - und antürlich mit jeder anderer Software, die Tiles nach dem x/y/z Schema laden kann - die Karten offline verwenden. Da die Nutzung des Tile Servers nicht auf die lokale Maschine beschränkt ist, kann man sie z.B. in einem LAN einsetzen und so eine Reihe von Clients mit nur einem Server bedienen.
+
+# Ausblick
+Im Augenblick ist die offline Nutzung von Karten zwar funktional einwandfrei aber noch ein wenig hakelig. in einer der nächsten Versionen von ODIN werden wir die Erkennung der offline verfügbaren Karten automatisieren und in den Assistenten zur Nutzung der Basiskarten integrieren.
