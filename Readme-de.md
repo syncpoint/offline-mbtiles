@@ -56,7 +56,7 @@ Wir stellen in diesem Tutorial ausführbare Dateien für _MacOS-X_ und _Windows_
 
 ![OSX mbtileserver](offline-mbtiles-osx.png)
 
-Ser lokale Tile Server ist nun bereit und stellt (in diesem Fall) ein _Tileset_ (also ein spezifisches Kartenmaterial) unter der URL ```http://localhost:8000/services``` zur Verfügung. Um herauszufinden, wie genau wir an das Kartenmaterial herankommen, öffnen wir diese URL in einem beliebigen Browser. Der Server gibt nun Aukunft darüber, welches Kartenmaterial abgerufen werden kann:
+Der lokale Tile Server ist nun bereit und stellt (in diesem Fall) ein _Tileset_ (also ein spezifisches Kartenmaterial) unter der URL ```http://localhost:8000/services``` zur Verfügung. Um herauszufinden, wie genau wir an das Kartenmaterial herankommen, öffnen wir diese URL in einem beliebigen Browser. Der Server gibt nun Aukunft darüber, welches Kartenmaterial abgerufen werden kann:
 
 ```json
 [{"imageType":"png","url":"http://localhost:8000/services/standard16","name":"GDE-basemap_Standard1"}]
