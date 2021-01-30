@@ -98,4 +98,4 @@ Die oben ermittelte URL für den lokalen Tile Provider ```http://localhost:8000/
 Geschafft! So lange der lokale Tile Server läuft, können wir nun mit ODIN - und antürlich mit jeder anderer Software, die Tiles nach dem x/y/z Schema laden kann - die Karten offline verwenden. Da die Nutzung des Tile Servers nicht auf die lokale Maschine beschränkt ist, kann man sie z.B. in einem LAN einsetzen und so eine Reihe von Clients mit nur einem Server bedienen.
 
 # Ausblick
-Im Augenblick ist die offline Nutzung von Karten zwar funktional einwandfrei aber noch ein wenig hakelig. in einer der nächsten Versionen von ODIN werden wir die Erkennung der offline verfügbaren Karten automatisieren und in den Assistenten zur Nutzung der Basiskarten integrieren.
+Im Augenblick ist die offline Nutzung von Karten zwar funktional einwandfrei aber noch ein wenig hakelig. In einer der nächsten Versionen von ODIN werden wir die Erkennung der offline verfügbaren Karten automatisieren und in den Assistenten zur Nutzung der Basiskarten integrieren.
