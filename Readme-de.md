@@ -35,7 +35,7 @@ Dazu benötigen wir [den MBTiles Server]() und entpacken das Archiv (ZIP) an ein
 ├── mbtileserver.exe
 ├── osx.command
 ├── tilesets
-     ├── Readme.txt
+     ├── drop-MBTile-files-here.txt
 ├── windows.cmd
 ```
 
@@ -46,7 +46,7 @@ Nun laden wir einen (oder beide) der oben angeführten Container von basemap.at 
 ├── mbtileserver.exe
 ├── osx.command
 ├── tilesets
-     ├── Readme.txt
+     ├── drop-MBTile-files-here.txt
      ├── standard16.mbtiles
 ├── windows.cmd
 ```
