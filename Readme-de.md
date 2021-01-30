@@ -88,6 +88,9 @@ Die für uns wichtige Information versteckt sich hinter der Eigenschaft ```tiles
 Um bei vielen ```mbtiles``` Containern sicherzustellen, dass wir auch den richtigen erwischt haben, lässt sich über die in der Eigenschaft ```map``` angegebenen URL ```http://localhost:8000/services/standard16/map``` eine lokale Vorschau im Browser starten.
  
 # Nutzung in ODIN
-Die oben ermittelte URL für den lokalen Tile Provider ```http://localhost:8000/services/standard16/tiles/{z}/{x}/{y}.png``` werden wir nun in ODIN verwenden. Dazu öffnen wir die Verwaltung der Basiskarten und fügen einen neuen Eintrag hinzu:
+Die oben ermittelte URL für den lokalen Tile Provider ```http://localhost:8000/services/standard16/tiles/{z}/{x}/{y}.png``` werden wir nun in ODIN verwenden. Dazu öffnen wir die Verwaltung der Basiskarten und fügen mit Hilfe des Assistenten einen neuen Eintrag hinzu:
 
-
+![ODIN Basiskarte URL](ODIN-Basiskarte-URL.png)
+![ODIN Basiskarte Zoom](ODIN-Basiskarte-MinMax-Zoom.png)
+![ODIN Basiskarte Vorschau](ODIN-Basiskarte-Vorschau.png)
+![ODIN Basiskarte Namen](ODIN-Basiskarte-Namen.png)
