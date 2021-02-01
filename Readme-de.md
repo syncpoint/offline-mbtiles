@@ -3,10 +3,6 @@
 Für unser Open-Source Führungsinformationssystem ODIN soll Kartenmaterial auch offline zur Verfügung stehen. Diese Anforderung erscheint nur logisch wenn man bedenkt, dass sowohl zivile wie auch militärische Einsatzkräfte in hohem Ausmaß unabhängig von vorhandener bzw. funktionierender Infrastruktur operieren müssen. Offline Fähigkeit bedeutet in diesem Zusammenhang, dass der Einsatz ohne eine Verbindung zum Internet durchgeführt werden kann.
 
 # Kartenmaterial
-
-Unser FüIS ODIN kann Kartenmaterial einbinden, das typischerweise von einem Kartenprovider bereitgestellt wird. Typische Vertreter von öffentlich zugänglichen Kartenprovidern sind z.B. OpenStreetMap oder basemap.at. Letztere werden wir beispielhaft in diesem Tutorial nutzen, da die notwendigen Daten von basemap.at bereits für den Download bereitgestellt werden.
-
-Das Kartenmaterial wird in der Form von quadratischen Kacheln (Tiles) bereitgestellt, d.h. das sichtbare Kartenbild setzt sich aus einer Anzahl von Kacheln zusammen. Die Auswahl der Kacheln hängt von der Zoom-Stufe und vom Kartenausschnitt ab. Um nun die für den aktuell gewählten Kartenausschnitt notwendigen Kacheln zu laden, werden diese vom Kartenprovider angefordert. Die Addressierung der Kacheln erfolgt über das sogenannte x/y/z Schema, wobei die Variable {z} für die Zoomstufe und {x}{y} für die Koordinaten der Kachel in dieser Zoomstufe stehen. Werden die Karten über das Internet angeboten, dann konsumiert man die Kacheln beispielhaft über eine URL wie diese: https://{servername}/{kartenname}/{z}/{x}/{y}.png
  
 Für die Nutzung von Kartenmaterial ohne Inernetzugang werden die Kacheln in einen Container gepackt. Das ermöglicht die Verteilung und Nutzung durch die Bereitstellung einer einzigen - zugegeben sehr großen - Datei.
  
@@ -26,7 +22,7 @@ und/oder
 Wie schon im Punkt Kartenmaterial beschrieben, wird das Kartenmaterial typischerweise über einen Server bereitgestellt und die Kartenkacheln über eine URL geladen. Das werden wir auch in diesem Tutorial so machen. Wir stellen einen minimalen Karten-Server zur Verfügung, der vom [US Conservation Biology Institute
 ](https://github.com/consbio/mbtileserver) als frei verwendbare Open-Source Software bereitgestellt wird.
 
-Dazu benötigen wir [den ODIN Offline Maps MBTiles Server](https://github.com/syncpoint/offline-mbtiles/releases/download/v1.0/ODIN_Offline_Maps.zip) und entpacken das Archiv (ZIP) an einen beliebigen Ort im Dateisystem. Das Resultat sieht so aus:
+Dazu benötigen wir [den ODIN Offline Maps Server](https://github.com/syncpoint/offline-mbtiles/releases/download/v1.0/ODIN_Offline_Maps.zip) und entpacken das Archiv (ZIP) an einen beliebigen Ort im Dateisystem. Das Resultat sieht so aus:
 
 ```
 ├── mbtileserver
