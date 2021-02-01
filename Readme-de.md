@@ -2,12 +2,6 @@
 
 Für unser Open-Source Führungsinformationssystem ODIN soll Kartenmaterial auch offline zur Verfügung stehen. Diese Anforderung erscheint nur logisch wenn man bedenkt, dass sowohl zivile wie auch militärische Einsatzkräfte in hohem Ausmaß unabhängig von vorhandener bzw. funktionierender Infrastruktur operieren müssen. Offline Fähigkeit bedeutet in diesem Zusammenhang, dass der Einsatz ohne eine Verbindung zum Internet durchgeführt werden kann.
 
-# Methode
-
-Unser Ansatz ist grundsätzlich "user first". D.h., die Anwendung so zu gestalten, dass selbst ungeübte Personen rasch Erfolge erzielen und die Bedienung der Anwendung dem eigentlichen Ziel nicht "im Weg" steht.
-
-Das soll auch bei diesem Tutorial im Vordergrund stehen, wiewohl die gewählte Methode für das Bereitstellen des Kartenmaterials zwar einfach ist, aber gerade für nicht versierte Benutzer auf den ersten Blick abschreckend erscheint.
-
 # Kartenmaterial
 
 Unser FüIS ODIN kann Kartenmaterial einbinden, das typischerweise von einem Kartenprovider bereitgestellt wird. Typische Vertreter von öffentlich zugänglichen Kartenprovidern sind z.B. OpenStreetMap oder basemap.at. Letztere werden wir beispielhaft in diesem Tutorial nutzen, da die notwendigen Daten von basemap.at bereits für den Download bereitgestellt werden.
